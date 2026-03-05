@@ -1,34 +1,40 @@
-.global {
-  /* Global CSS Variables */
-  --primary-color: rgba(255, 255, 255, 0.8);
-  --secondary-color: rgba(34, 34, 34, 0.8);
-  --accent-color: rgba(0, 150, 136, 0.8);
-  --background-color: rgba(0, 0, 0, 0.8);
-  --border-radius: 15px;
-  --shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-
-  /* Dark Theme */
-  background-color: var(--background-color);
-  color: var(--primary-color);
-
-  /* Glassmorphism Effect */
+.theme {
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--secondary-color);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: var(--background-color);
+.typography {
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+.button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-p {
-  color: var(--secondary-color);
+.button:hover {
+  background-color: #3700b3;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.input:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
+.utility {
+  margin: 10px;
+  padding: 10px;
 }
